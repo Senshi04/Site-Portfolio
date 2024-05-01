@@ -1,5 +1,7 @@
 // @flow
 import * as React from 'react';
+import {PrimaryButton} from "./PrimaryButton";
+
 
 type Props = {
 
@@ -20,9 +22,11 @@ export function Header(props: Props) {
                     <li className={"header-link"}><a href={"#aPropos"}>A PROPOS</a></li>
                 </ul>
 
-                <div className={"header-link"} id={"contactButton"}>
+                {/* <div className={"header-link"} id={"contactButton"}>
                     <a href={"#contact"}>CONTACT</a>
-                </div>
+                </div> */}
+                <PrimaryButton color="#FF81AE" text="CONTACT" />
+
             </nav>
         </header>
     );
